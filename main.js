@@ -6,17 +6,16 @@ const client = new rpc.Client({ transport: 'ipc' });
 
 const AppID = "873161814635085877"
 const details = "Monitoring Service."
-const state = "2.0.0-beta"
 const largeImageKey = "icon"
-const largeImageText = "Apptime Desktop"
+const largeImageText = "Apptime Desktop 3.1.0"
 
 client.on('ready', () => {
 
   client.setActivity({
     details: details,
-    state: state,
     largeImageKey: largeImageKey,
     largeImageText: largeImageText,
+    startTimestamp: new Date(),
     buttons: [
       { label: "Website", url: "https://www.apptime.tech" }, { label: "Apptime Desktop", url: "https://desktop.apptime.tech" },
     ]
@@ -31,6 +30,8 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 1200,
     height: 800,
+    minWidth: 1100,
+    minHeight: 700,
     title: 'Loading...',
     webPreferences: {
       nodeIntegration: true,
@@ -44,3 +45,15 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow);
+
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") {
+    app.quit();
+  }
+});
+
+app.on("activate", () => {
+  if (win === null) {
+    createWindow();
+  }
+});
