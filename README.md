@@ -13,7 +13,7 @@ Thanks for contributions: `AdemCanCertel`
 
 ## Installation
 - npm i
-- node .
+- npm start
 
 ## Build
 - npm i 
