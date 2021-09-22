@@ -1,6 +1,6 @@
 {
   "name": "Apptime-Desktop",
-  "version": "3.1.0",
+  "version": "3.3.0",
   "description": "Checks the availability of your website in one minute intervals from 30 different locations on 6 continents.",
   "main": "main.js",
   "scripts": {
@@ -14,11 +14,12 @@
     "electron-builder": "^22.11.7"
   },
   "dependencies": {
-    "discord-rpc": "^4.0.1"
+    "discord-rpc": "^4.0.1",
+    "v8-compile-cache": "^2.3.0"
   },
   "build": {
     "productName": "Apptime Desktop",
-    "buildVersion": "3.1.0",
+    "buildVersion": "3.3.0",
     "copyright": "Aventur SAS 2021-",
     "icon": "images/icon.png"
   }

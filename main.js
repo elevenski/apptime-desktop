@@ -1,13 +1,13 @@
 const { app, BrowserWindow, ipcMain: ipc } = require("electron");
+require('v8-compile-cache');
 
 const rpc = require("discord-rpc");
 const client = new rpc.Client({ transport: 'ipc' });
 
-
 const AppID = "873161814635085877"
 const details = "Monitoring Service."
 const largeImageKey = "icon"
-const largeImageText = "Apptime Desktop 3.1.0"
+const largeImageText = "Apptime Desktop"
 
 client.on('ready', () => {
 
@@ -34,13 +34,19 @@ function createWindow() {
     minHeight: 700,
     title: 'Loading...',
     webPreferences: {
+      plugins: true,
       nodeIntegration: true,
     },
     autoHideMenuBar: true,
-    icon: 'images/icon.png'
+    icon: 'images/icon.png',
+    frame: true,
+    center: true,
+    fullscreen: false
   });
 
+  win.webContents.insertCSS('body { background-color: black; } ::-webkit-scrollbar { display: none; }')
   win.loadURL("https://www.apptime.tech")
+  win.setMenu(null);
 
 }
 
