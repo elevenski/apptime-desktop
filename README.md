@@ -3,7 +3,7 @@
 </p>
 
 ## Description
-⚡ Fast & Safe & Easy application without waiting for your browser to open.
+⚡ Manage your monitors with one click at hand! Fast & Safe & Easy
 
 ## Programming Languages
 `JavaScript`
