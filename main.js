@@ -17,7 +17,7 @@ client.on('ready', () => {
     largeImageText: largeImageText,
     startTimestamp: new Date(),
     buttons: [
-      { label: "Website", url: "https://www.apptime.tech" }, { label: "Apptime Desktop", url: "https://desktop.apptime.tech" },
+      { label: "Join Apptime", url: "https://www.apptime.tech" }, { label: "Download Desktop App", url: "https://github.com/apptime-service" },
     ]
   });
 });
@@ -28,8 +28,8 @@ client.login({ clientId: AppID }).catch((error) => {
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 1200,
-    height: 800,
+    width: 1920,
+    height: 1080,
     minWidth: 1100,
     minHeight: 700,
     title: 'Loading...',
@@ -44,7 +44,7 @@ function createWindow() {
     fullscreen: false
   });
 
-  win.webContents.insertCSS('body { background-color: black; } ::-webkit-scrollbar { display: none; }')
+  win.webContents.insertCSS('body { background-color: black; -webkit-user-select: none; -ms-user-select: none; user-select: none; } ::-webkit-scrollbar { display: none; }')
   win.loadURL("https://www.apptime.tech")
   win.setMenu(null);
 
