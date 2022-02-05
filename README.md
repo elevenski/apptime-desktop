@@ -6,7 +6,7 @@
 ⚡ Manage your monitors with one click at hand! Fast & Safe & Easy
 
 ## Programming Languages
-`JavaScript`
+`JavaScript`, `TypeScript` & `HTML`
 
 ## Contributors
 Thanks for contributions: `AdemCanCertel`
