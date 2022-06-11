@@ -2,10 +2,7 @@
   <img width="100" src="https://raw.githubusercontent.com/elevenvac/elevenvac/master/Eleven_icon_higer_florence.png" alt="Eleven Icon">
 </p>
 
-## Description
-⚡ Manage your monitors with one click at hand! Fast & Safe & Easy
-
-## Programming Languages
+## Languages
 `JavaScript`, `TypeScript` & `HTML`
 
 ## Contributors
