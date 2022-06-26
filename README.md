@@ -14,7 +14,7 @@ Thanks for contributions: `AdemCanCertel`
 
 ## Build
 - npm i 
-- npm run build
+- npm run eb
 
 ## Discord Server
 <a href="https://discord.gg/uhwjhWryND"><img src="http://invidget.switchblade.xyz/uhwjhWryND"/></a>
