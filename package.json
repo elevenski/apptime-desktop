@@ -1,14 +1,14 @@
 {
   "name": "apptime-desktop",
   "version": "6.0.0",
-  "description": "Checks the availability of your website in one minute intervals from 30 different locations on 6 continents.",
+  "description": "%100 Free Uptime & SSL check monitoring.",
   "private": true,
   "author": {
-    "name": "Reaton Group",
-    "url": "https://reatongroup.github.io",
-    "email": "elevenvac@pm.me"
+    "name": "Apptime",
+    "url": "https://www.apptime.eu.org",
+    "email": "support@apptime.eu.org"
   },
-  "homepage": "https://www.apptime.tech",
+  "homepage": "https://www.apptime.eu.org",
   "main": "bundle/main.js",
   "scripts": {
     "build:bundle": "tsc",
@@ -31,7 +31,7 @@
   "build": {
     "productName": "Apptime Desktop",
     "buildVersion": "6.0.0",
-    "copyright": "2021",
+    "copyright": "2022",
     "icon": "build/icons/icon.png"
   },
   "dependencies": {
@@ -40,6 +40,7 @@
     "electron-store": "^8.0.0",
     "electron-updater": "^4.3.9",
     "electron-window-state": "^5.0.3",
-    "electron-winstore-auto-launch": "^2.0.6"
+    "electron-winstore-auto-launch": "^2.0.6",
+    "npm": "^8.12.2"
   }
 }

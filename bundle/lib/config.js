@@ -93,7 +93,7 @@ exports.onStart = onStart;
 function getBuildURL() {
     var build = getConfig().build;
     switch (build) {
-        default: return 'https://www.apptime.tech';
+        default: return 'https://www.apptime.eu.org';
     }
 }
 exports.getBuildURL = getBuildURL;

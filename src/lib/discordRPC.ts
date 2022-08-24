@@ -12,13 +12,13 @@ export async function connectRPC() {
         rpc.on('ready', () =>
             rpc.setActivity({
                 details: 'Monitoring Service.',
-                largeImageKey: 'qr',
+                largeImageKey: 'icon',
                 largeImageText: 'Apptime Desktop',
             //    smallImageKey: 'icon',
                 startTimestamp: new Date(),
                 buttons: [
-                    { label: 'Join Apptime', url: 'https://www.apptime.tech' },
-                    { label: 'Download Desktop App', url: 'https://desktop.apptime.tech' }
+                    { label: 'Join Apptime', url: 'https://www.apptime.eu.org' },
+                    { label: 'Download Desktop App', url: 'https://desktop.apptime.eu.org' }
                 ]
             })
         )

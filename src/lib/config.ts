@@ -48,6 +48,6 @@ export function getBuildURL() {
 	const build: 'stable' | 'nightly' | 'dev' = getConfig().build;
 
 	switch (build) {
-		default: return 'https://www.apptime.tech';
+		default: return 'https://www.apptime.eu.org';
 	}
 }
